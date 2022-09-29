@@ -1,0 +1,91 @@
+Script started on 2022年03月10日 星期四 22时41分19秒
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ make
+gcc -ansi -Wall -c -std=c11 -g MovieLab.c -o MovieLab.o 
+In file included from [01m[KMovieLab.c:20:0[m[K:
+[01m[KMovie.h:18:1:[m[K [01;35m[Kwarning: [m[Kno semicolon at end of struct or union
+ [01;35m[K}[m[KMOVIE;
+ [01;35m[K^[m[K
+gcc -ansi -Wall -c -std=c11 -g FileIO.c -o FileIO.o 
+gcc -ansi -Wall -c -std=c11 -g DIPs.c -o DIPs.o 
+[01m[KDIPs.c:[m[K In function ‘[01m[KSpotlight[m[K’:
+[01m[KDIPs.c:193:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+gcc -ansi -Wall -c -std=c11 -g Image.c -o Image.o 
+gcc -ansi -Wall -c -std=c11 -g ImageList.c -o ImageList.o 
+In file included from [01m[KImageList.c:15:0[m[K:
+[01m[KMovie.h:18:1:[m[K [01;35m[Kwarning: [m[Kno semicolon at end of struct or union
+ [01;35m[K}[m[KMOVIE;
+ [01;35m[K^[m[K
+gcc -ansi -Wall -c -std=c11 -g Movie.c -o Movie.o
+In file included from [01m[KMovie.c:13:0[m[K:
+[01m[KMovie.h:18:1:[m[K [01;35m[Kwarning: [m[Kno semicolon at end of struct or union
+ [01;35m[K}[m[KMOVIE;
+ [01;35m[K^[m[K
+gcc -Wall MovieLab.o FileIO.o DIPs.o Image.o ImageList.o Movie.o -o MovieLab
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./MovieLab -h
+
+Usage: MovieLab -i <file> -o <file> -f <framenum> -s <WIDTHxHEIGHT> [options]
+Options:
+-aging                Activate the aging filter on every movie frame
+-hflip                Activate horizontal flip on every movie frame
+-edge                 Activate the edge filter on every movie frame
+-crop <start-end>     Crop the movie frames from <start> to <end>
+-fast <factor>        Fast forward the movie by <factor>
+-reverse              Reverse the frame order of the input movie
+-watermark <file>     Add a watermark from <file> to every movie frame
+-spotlight            Spotlight the fade in and fade out
+-zoom                 Zoom in and out the input movie
+-h                    Display this usage information
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./movie[K[K[K[K[KMovieLab -i EngPlaza.yuv -o out.yuv -f 70 -s 512x288 -agin g
+The movie file EngPlaza.yuv has been read successfully!
+output file is out.yuv
+Operation Aging is done!
+The movie file out.yuv has been written successfully!
+70 frames are written to the file out.yuv in total.
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./Movielab[K[K[KLab -i EngPlaza.yuv -o out.yuv -f 70 -s 512x288 -hfli p
+The movie file EngPlaza.yuv has been read successfully!
+output file is out.yuv
+Operation HFlip is done!
+The movie file out.yuv has been written successfully!
+70 frames are written to the file out.yuv in total.
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./MovieLab -i EngPlaza.yuv -o out.yuv -f 70 -s 512x288 -edge 
+The movie file EngPlaza.yuv has been read successfully!
+output file is out.yuv
+Operation Edge is done!
+The movie file out.yuv has been written successfully!
+70 frames are written to the file out.yuv in total.
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./MovieLab -i EngPlaza.yuv -o out.yuv -f 70 -s 512x288 -fast  3
+The movie file EngPlaza.yuv has been read successfully!
+output file is out.yuv
+The movie file out.yuv has been written successfully!
+70 frames are written to the file out.yuv in total.
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./moVIE[K[K[K[K[KMovieLab -i EngPlaza.yuv -o out.yuv -f 70 -s 512x288 -crop  10-20
+The movie file EngPlaza.yuv has been read successfully!
+output file is out.yuv
+Operation Crop is done! New number of frames is 11.
+The movie file out.yuv has been written successfully!
+70 frames are written to the file out.yuv in total.
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./movie[K[K[K[K[KMovieLab -i EngPlaza.yuv -o out.yuv -f 70 -s 512x288 -wate rmark watermark.ppm
+The movie file EngPlaza.yuv has been read successfully!
+output file is out.yuv
+Operation Watermark is done!
+The movie file out.yuv has been written successfully!
+70 frames are written to the file out.yuv in total.
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./movie[K[K[K[K[KMovieLab -i EngPlaza.yuv -o out.yuv -f 70 -s 512x288 -spot light
+The movie file EngPlaza.yuv has been read successfully!
+output file is out.yuv
+MovieLab: Movie.c:86: RGB2YUVMovie: Assertion `movie' failed.
+Abort (core dumped)
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./MovieLab -i EngPlaza.yuv -o out.yuv -f 70 -s 512x288 -zoom 
+The movie file EngPlaza.yuv has been read successfully!
+output file is out.yuv
+Operation Zoom is done!
+The movie file out.yuv has been written successfully!
+70 frames are written to the file out.yuv in total.
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ ./[K[Kvalgrind =[K--[K[K ./MovieLab-i EngPlaza.yuv -o out.yuv -f 70 -s 512x2 88
+valgrind: ./MovieLab-i: No such file or directory
+]0;yuanw28@zuma:hw5[yuanw28@zuma hw5]$ exit
+exit
+
+Script done on 2022年03月10日 星期四 22时48分07秒

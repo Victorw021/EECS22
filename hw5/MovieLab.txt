@@ -1,0 +1,5 @@
+This assignment is obviously very hard to accomplished compared to the previous four assignment
+It basically a program that focus on develop changes to a movie. The functions are similar to the operations
+in PhotoLab, such as balck and white, crop, and so on. There are warnings about the }Movie; that I don't know
+how to solved, and sometimes when I run the program, it will show segmentation falt. It is overall a very hard
+program.
