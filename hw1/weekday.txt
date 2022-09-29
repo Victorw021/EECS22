@@ -1,0 +1,4 @@
+For this assignment, I basically follow the formula provided in the pdf file. Prompt for user input the date, and then operate the integers based on
+the formula. For the exceptions, I used if statment to add the month and minus the year. Moreover, before input, if we have operated the month
+and year for the exception, I used a if statement to change it back, so that we can output the correct date information. For the text output, I used 
+if statement to accomplished it too.

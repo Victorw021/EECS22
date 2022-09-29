@@ -1,0 +1,85 @@
+Script started on 2022年01月24日 星期一 18时14分36秒
+]0;yuanw28@zuma:hw2[yuanw28@zuma hw2]$ gcc PhotoLab.c -std=c11 -Wall -o PhotoLab
+]0;yuanw28@zuma:hw2[yuanw28@zuma hw2]$ ./PhotoLab
+----------------------------------------------
+1: Load a PPM image
+2: Save the image in PPM and JPEG format
+3: Change the color image to Black $ White
+4: Make a negative of an image
+5: Color filter an image
+6: Sketch the edge of an image
+7: Shuffle adn image
+8: Flip an image vertically
+9: Mirror and image vertically
+10: Add Border to an image
+11: Test all functions
+12: Exit
+----------------------------------------------
+Please make your choice: 11
+EngPlaza.ppm was read successfully!
+"Black & White" operation is done!
+bw.ppm was saved successfully. 
+bw.jpg was stored for viewing. 
+Black and White tested!
+
+EngPlaza.ppm was read successfully!
+"Negative" operation is done!
+negative.ppm was saved successfully. 
+negative.jpg was stored for viewing. 
+Negative tested!
+
+EngPlaza.ppm was read successfully!
+"ColorFilter" operation is done!
+colorfilter.ppm was saved successfully. 
+colorfilter.jpg was stored for viewing. 
+Color Filter tested!
+
+EngPlaza.ppm was read successfully!
+"Edge" operation is done!
+edge.ppm was saved successfully. 
+edge.jpg was stored for viewing. 
+Edge tested!
+
+EngPlaza.ppm was read successfully!
+"Shuffle" operation is done!
+shuffle.ppm was saved successfully. 
+shuffle.jpg was stored for viewing. 
+Shuffle tested!
+
+EngPlaza.ppm was read successfully!
+"Vflip" operation is done!
+vflip.ppm was saved successfully. 
+vflip.jpg was stored for viewing. 
+VFlip tested!
+
+EngPlaza.ppm was read successfully!
+"VMirror" operation is done!
+vmirror.ppm was saved successfully. 
+vmirror.jpg was stored for viewing. 
+VMirror tested!
+
+EngPlaza.ppm was read successfully!
+"AddBorder" operation is done!
+border.ppm was saved successfully. 
+border.jpg was stored for viewing. 
+AddBorder tested!
+
+----------------------------------------------
+1: Load a PPM image
+2: Save the image in PPM and JPEG format
+3: Change the color image to Black $ White
+4: Make a negative of an image
+5: Color filter an image
+6: Sketch the edge of an image
+7: Shuffle adn image
+8: Flip an image vertically
+9: Mirror and image vertically
+10: Add Border to an image
+11: Test all functions
+12: Exit
+----------------------------------------------
+Please make your choice: 12
+]0;yuanw28@zuma:hw2[yuanw28@zuma hw2]$ exit
+exit
+
+Script done on 2022年01月24日 星期一 18时15分00秒

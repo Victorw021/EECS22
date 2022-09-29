@@ -1,0 +1,5 @@
+This lab was a upgrade based on the last one. In this time, we need to added more functions.
+And most improtantly, the single c file divided into different c files and header files. Applied the
+knowledge about make files, library, and struictures. It was kind of 
+hard at the first to make all thoes happened. But it is satisfield at the end. It is great to learning new ways
+to code. It is more clear and easy to see the problems.

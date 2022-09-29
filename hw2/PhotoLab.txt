@@ -1,0 +1,21 @@
+PhotoLab basically is like a Photoshop program, and can realize certain function to change the photo.
+This program required a menu driven, so I use while and switch to fulfill this requirement. 
+In the switch statement, I called different function depends on user input.
+Black and White:
+Loop the whole array and change the intensity to (r + b + g)/3
+Negative:
+Loop the whole array and change use 255 to subtract the intensity value for each rgb.
+ColorFilter:
+Operate based on user's promt of target_r, target_g, target_b, threshold, replace_r, replace_g, replace_b, make sure it is in the range of 0-255
+Change the color of the pixel within the range user prompt.
+Edge:
+Create a new function of the saturated arithmetic purpose. Calculate the 8 values for surrounding pixel and change the intensity values of them. Use thew saturated function at the end.
+Shuffle:
+generate an random number, and use it to random generate the 16 pieces of picture. 
+VFlip:
+Use temp variable  to copy and replace the value in the array. Centered by the middle line, so we use Height/2 in the loop. 
+Vmirror:
+Copy the value from up side to the down side.
+Add border:
+Ask the user with the color they want and the width of the border. Assigned the pixel at the border position to be the specific color.
+Overall, it is important to know the for loop, and the knowledge of array. 

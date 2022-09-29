@@ -1,0 +1,5 @@
+Well, in this time, we are still doing changes based on PhotoLab. Our focus was to make the problem
+able to process dynamic image size with the help of pointers. At first, I feel it is very hard becasue we 
+need to change our mind on think about this problem. The structure is totally different compare to 
+the previous one. By using malloc and free allocate, the problem is able to keep track of the pixels.
+It is a challenged problem.

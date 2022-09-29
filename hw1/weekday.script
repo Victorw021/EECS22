@@ -1,0 +1,32 @@
+Script started on 2022年01月04日 星期二 23时52分09秒
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ scl enable devtoolset-7 tcsh
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ gcc weekday.c -std=c11 -Wall -o weekday
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ ./weekday
+Please enter a calendar date: 
+Day, d = 12
+Month, m = 1
+Year, y = 2022
+For the calendar date 1/12/2022, the day of the week is 4
+This is Wednesday.
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ gcc weekday.c -std=c11 -Wall -o weekday
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ ./weekday
+Please enter a calendar date: 
+Day, d = 1
+Month, m = 1
+Year, y = 2023
+For the calendar date 1/1/2023, the day of the week is 1
+This is Sunday.
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ gcc weekday.c -std=c11 -Wall -o weekday
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ ./weekday
+Please enter a calendar date: 
+Day, d = 4
+Month, m = 10
+Year, y = 1965
+For the calendar date 10/4/1965, the day of the week is 2
+This is Monday.
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ exit
+exit
+]0;yuanw28@zuma:hw1[yuanw28@zuma hw1]$ exit
+exit
+
+Script done on 2022年01月04日 星期二 23时54分52秒
